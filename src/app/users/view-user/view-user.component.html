@@ -1,0 +1,6 @@
+
+<mat-card class="user-details" *ngFor="let u of userDetails">
+<mat-card-title>{{u.firstname}}&nbsp;&nbsp;{{u.lastname}}</mat-card-title>
+<mat-card-content>{{u.email}}</mat-card-content>
+ <mat-card-actions><a  class="actionlink" [routerLink]="['back']"><button mat-raised-button color="primary">back</button></a></mat-card-actions>
+</mat-card>
